@@ -25,3 +25,12 @@ This program modifies the volume of an audio file in WAV format. It takes in an 
 Note: Detailed installation information can be found here:
 
 https://cs50.readthedocs.io/libraries/cs50/c/
+
+## Usage Example
+
+program should behave per the examples below:
+
+`./volume input.wav output.wav 2.0`
+
+When you listen to output.wav (as by control-clicking on output.wav in the file browser, choosing Download, and then opening the file in an audio player on your computer), it should be twice as loud as input.wav.
+
