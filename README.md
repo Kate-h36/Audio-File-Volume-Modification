@@ -6,4 +6,7 @@ This program modifies the volume of an audio file in WAV format. It takes in an 
 
 1. Clone Repository:
 
-``
+`https://github.com/Kate-h36/Audio-File-Volume-Modification.git`
+
+2. Compile the program:
+
