@@ -37,3 +37,15 @@ When you listen to output.wav (as by control-clicking on output.wav in the file 
 `./volume input.wav output.wav 0.5`
 
 When you listen to output.wav, it should be half as loud as input.wav.
+
+## Explanation of Algorithm
+
+This program modifies the volume of an audio file by applying a scaling factor to each audio sample. The program takes three command line arguments: the input file name, the output file name, and the scaling factor.
+
+The program first checks that the correct number of command line arguments have been provided. It then opens the input and output files, and reads in the .wav header from the input file using fread(). The header is then written to the output file using fwrite().
+
+The program then reads in each audio sample from the input file using fread(), multiplies it by the given scaling factor, and writes the modified sample to the output file using fwrite().
+
+Finally, the program closes the input and output files and terminates.
+
+Note: This program assumes that the input file is a .wav file with a 16-bit depth and a sampling rate of 44100 Hz. Any deviation from these assumptions may result in unexpected behavior.
